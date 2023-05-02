@@ -19,9 +19,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -36,48 +33,53 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-API на Python, де реалізований ендпоінт, яĸий приймає на вхід синтаĸсичне дерево англійсьĸого теĸсту, а також можливо додатковий параметр, котрий задає максимальну кількість перефтазованих текстів та повертає його перефразовані версії у форматі JSON.
-Для вирішення завдання використона бібліотека nltk.tree та фрейморк Flask. 
-Перефразування виконувалось настпним чином:
-* Знаходження в дереві всі NP, що сĸладаються з ĸільĸох NP, розділенних тегами "," (комою) або "СС" (зв'язĸовим зворотом).
-* Генерування варіантів перестановоĸ дочірніх NP один з одним. В даному випадку, здійснювалась перестановка лише частин з тегом NNS (Noun, plural), для того щоб не змінилась суть тексту. Загалом можна застосувати й інші варіанти перефразування.
+API in Python, where an endpoint is implemented, which accepts as input a syntactic tree of English text and returns its paraphrased versions in JSON format.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+The Flask framework and the nltk.tree library were used to solve the problem.
+Paraphrasing was carried out as follows:
+* Finding in the tree all NP that consisting of several NP separated by the tags "," (comma) or "СС" (coordinating conjunction).
+* Generation of permutations of daughter NPs with each other. In this case, only the parts with the NNS (Noun plural) tag were rearranged to preserve the meaning of the text. In general, other paraphrasing options can also be applied.
 
-### Built With
-
-Використані фрейморки та бібліотеки
-
-* [![Flask][flask.palletsprojects.com]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+You can view the project by following the link:
+&#128073;[**CLICK HERE**](https://web-production-5280.up.railway.app/paraphrase?tree=(S (NP (NP (DT The) (JJ charming) (NNP Gothic) (NNP Quarter) ) (, ,) (CC or) (NP (NNP Barri) (NNP Gòtic) ) ) (, ,) (VP (VBZ has) (NP (NP (JJ narrow) (JJ medieval) (NNS streets) ) (VP (VBN filled) (PP (IN with) (NP (NP (JJ trendy) (NNS bars) ) (, ,) (NP (NNS clubs) ) (CC and) (NP (JJ Catalan) (NNS restaurants) ) ) ) ) ) ) ))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Щоб запустити локальну копію, виконайте ці наступні кроків.
+To run the project locally, follow these steps.
 
 ### Installation
 
-1. Clone the repo
+1. First, you should have Python3 installed, you can check this with the following command:
+   ```sh
+   python3 --version
+   ```
+   If you haven't done this before, go to the link below and follow the simple instructions. 
+   &#128073;[**Python3 Installation & Setup Guide**](https://realpython.com/installing-python/#how-to-install-python-on-macos)
+2. After that, you need to go to the directory where you plan to place the project and execute the command:
    ```sh
    git clone https://github.com/MultiMilli/text-uniqueization-maklai.git
    ```
-3. Install dependencies
+3. Create a virtual environment inside the directory. To do this, use the **cd** command to go to the cloned directory and perform the following steps:
+   ```sh
+   python3 -m venv env
+   ```
+   ```sh
+   source env/bin/activate
+   ```
+4. To install all necessary dependencies, execute the command::
    ```sh
    pip install -r requirements.txt
    ```
-4. Run the app in localhost
+4. To launch the project, use the following command:
    ```sh
-   Flask run
+   flask --app app run 
    ```
+5. After that, copy and paste the following URL into the browser, having previously replaced values of *localhost* and *port*:
+
+*localhost:<port>/paraphrase?tree=(S (NP (NP (DT The) (JJ charming) (NNP Gothic) (NNP Quarter) ) (, ,) (CC or) (NP (NNP Barri) (NNP Gotic) ) ) (, ,) (VP (VBZ has) (NP (NP (JJ narrow) (JJ medieval) (NNS streets) ) (VP (VBN filled) (PP (IN with) (NP (NP (JJ trendy) (NNS bars) ) (, ,) (NP (NNS clubs) ) (CC and) (NP (JJ Catalan) (NNS restaurants) ) ) ) ) ) ) )*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,35 +92,3 @@ API на Python, де реалізований ендпоінт, яĸий при
 Project Link: [https://github.com/MultiMilli/text-uniqueization-maklai](https://github.com/MultiMilli/text-uniqueization-maklai)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 

@@ -1,8 +1,8 @@
 from itertools import permutations
 from json import dumps
 
-from flask import Flask, request, make_response
-from nltk.tree import Tree, ParentedTree
+from flask import Flask, make_response, request
+from nltk.tree import ParentedTree, Tree
 
 
 app = Flask(__name__)
