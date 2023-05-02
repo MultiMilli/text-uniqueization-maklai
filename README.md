@@ -42,6 +42,7 @@ Paraphrasing was carried out as follows:
 You can view the project by following the link:
 Project Link: [https://github.com/MultiMilli/text-uniqueization-maklai](https://web-production-5280.up.railway.app/paraphrase?tree=(S (NP (NP (DT The) (JJ charming) (NNP Gothic) (NNP Quarter) ) (, ,) (CC or) (NP (NNP Barri) (NNP Gòtic) ) ) (, ,) (VP (VBZ has) (NP (NP (JJ narrow) (JJ medieval) (NNS streets) ) (VP (VBN filled) (PP (IN with) (NP (NP (JJ trendy) (NNS bars) ) (, ,) (NP (NNS clubs) ) (CC and) (NP (JJ Catalan) (NNS restaurants) ) ) ) ) ) ) ))
 &#128073;[**CLICK HERE**]()
+[Текст ссылки](https://github.com/MultiMilli/text-uniqueization-maklai)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
