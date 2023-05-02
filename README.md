@@ -5,6 +5,7 @@
   <p align="center">
     <a href="https://github.com/MultiMilli/text-uniqueization-maklai"><strong>Explore the docs »</strong></a>
     <br />
+    <br />
     <a href="https://github.com/MultiMilli/text-uniqueization-maklai/issues">Report Bug</a>
     ·
     <a href="https://github.com/MultiMilli/text-uniqueization-maklai/issues">Request Feature</a>
@@ -39,7 +40,8 @@ Paraphrasing was carried out as follows:
 * Generation of permutations of daughter NPs with each other. In this case, only the parts with the NNS (Noun plural) tag were rearranged to preserve the meaning of the text. In general, other paraphrasing options can also be applied.
 
 You can view the project by following the link:
-&#128073;[**CLICK HERE**](https://web-production-5280.up.railway.app/paraphrase?tree=(S (NP (NP (DT The) (JJ charming) (NNP Gothic) (NNP Quarter) ) (, ,) (CC or) (NP (NNP Barri) (NNP Gòtic) ) ) (, ,) (VP (VBZ has) (NP (NP (JJ narrow) (JJ medieval) (NNS streets) ) (VP (VBN filled) (PP (IN with) (NP (NP (JJ trendy) (NNS bars) ) (, ,) (NP (NNS clubs) ) (CC and) (NP (JJ Catalan) (NNS restaurants) ) ) ) ) ) ) ))
+Project Link: [https://github.com/MultiMilli/text-uniqueization-maklai](https://web-production-5280.up.railway.app/paraphrase?tree=(S (NP (NP (DT The) (JJ charming) (NNP Gothic) (NNP Quarter) ) (, ,) (CC or) (NP (NNP Barri) (NNP Gòtic) ) ) (, ,) (VP (VBZ has) (NP (NP (JJ narrow) (JJ medieval) (NNS streets) ) (VP (VBN filled) (PP (IN with) (NP (NP (JJ trendy) (NNS bars) ) (, ,) (NP (NNS clubs) ) (CC and) (NP (JJ Catalan) (NNS restaurants) ) ) ) ) ) ) ))
+&#128073;[**CLICK HERE**]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
