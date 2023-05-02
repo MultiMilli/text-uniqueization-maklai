@@ -3,9 +3,7 @@
 <div align="center">
   <h3 align="center">Text-uniqueization for Python Internship by Maklai</h3>
   <p align="center">
-    <br />
     <a href="https://github.com/MultiMilli/text-uniqueization-maklai"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/MultiMilli/text-uniqueization-maklai/issues">Report Bug</a>
     ·
